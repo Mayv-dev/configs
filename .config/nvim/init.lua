@@ -525,6 +525,7 @@ require('lazy').setup {
 
       local lspconfig = require 'lspconfig'
       lspconfig.gleam.setup {}
+      lspconfig.fennel_ls.setup {}
       lspconfig.sourcekit.setup {
         capabilities = {
           workspace = {
@@ -570,10 +571,6 @@ require('lazy').setup {
               -- diagnostics = { disable = { 'missing-fields' } },
             },
           },
-        },
-
-        ols = {
-          filetypes = { 'odin' },
         },
       }
 
