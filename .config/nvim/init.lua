@@ -524,8 +524,9 @@ require('lazy').setup {
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
       local lspconfig = require 'lspconfig'
+
       lspconfig.gleam.setup {}
-      lspconfig.fennel_ls.setup {}
+
       lspconfig.sourcekit.setup {
         capabilities = {
           workspace = {
