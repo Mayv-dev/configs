@@ -26,7 +26,6 @@ export PATH=$PATH:/~/.local/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/~/.local/share/applications/
-export PATH=$PATH:/home/mayv/.cache/rebar3/
 
 # Start tmux on terminal open
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
@@ -49,3 +48,4 @@ export NVM_DIR="$HOME/.nvm"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+eval "$(mise activate zsh)"
