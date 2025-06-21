@@ -1,0 +1,29 @@
+[user]
+	name = Mayv-dev
+	email = 91346624+Mayv-dev@users.noreply.github.com
+[rerere]
+	enabled = true
+	autoupdate = true
+[core]
+	editor = nvim
+	autocrlf = input
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[commit]
+	verbose = true
+	gpgsign = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[tag]
+	gpgSign = true
+[gpg]
+	program = /usr/bin/gpg
