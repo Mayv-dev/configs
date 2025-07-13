@@ -1,6 +1,7 @@
 [user]
 	name = Mayv-dev
 	email = 91346624+Mayv-dev@users.noreply.github.com
+	signingkey = B1BBBB3C39D204B1510A072161BAADE95A3C7A98
 [rerere]
 	enabled = true
 	autoupdate = true
