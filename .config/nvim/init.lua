@@ -129,9 +129,6 @@ if not vim.loop.fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
--- Open netrw
-vim.keymap.set('n', '<leader>se', '<cmd>:Explore<CR>', { desc = '[S]earch [E]xplore' })
-
 function LspAttatch()
   vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
@@ -285,6 +282,15 @@ require('lazy').setup {
     },
   },
 
+  {
+    'f-person/git-blame.nvim',
+    opts = {
+      enabled = true,
+      message_template = ' <summary> • <date> • <author> • <<sha>>',
+      date_formate = '%r %Y-%m-%d',
+    },
+  },
+
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -352,10 +358,6 @@ require('lazy').setup {
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
     },
-  },
-
-  {
-    'purescript-contrib/purescript-vim',
   },
 
   -- NOTE: Plugins can specify dependencies.
@@ -925,6 +927,7 @@ require('lazy').setup {
     opts = {
       filesystem = {
         window = {
+          position = 'right',
           mappings = {
             ['\\'] = 'close_window',
           },
