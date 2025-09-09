@@ -106,6 +106,8 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set('n', '<leader>b', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle Git Blame' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -285,9 +287,9 @@ require('lazy').setup {
   {
     'f-person/git-blame.nvim',
     opts = {
-      enabled = true,
+      enabled = false,
       message_template = ' <summary> • <date> • <author> • <<sha>>',
-      date_formate = '%r %Y-%m-%d',
+      date_format = '%r • %Y-%m-%d',
     },
   },
 
