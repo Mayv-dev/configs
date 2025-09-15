@@ -108,6 +108,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set('n', '<leader>b', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle Git Blame' })
 
+vim.keymap.set('n', '<leader>ms', '<cmd>set colorcolumn=80,120<cr>', { desc = 'Show Rulers' })
+vim.keymap.set('n', '<leader>mh', '<cmd>set colorcolumn=<cr>', { desc = 'Show Rulers' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
