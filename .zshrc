@@ -13,6 +13,8 @@ plugins=(
     zsh-syntax-highlighting
     F-Sy-H
     zsh-autocomplete
+
+    deno
 )
 
 source $ZSH/oh-my-zsh.sh
